@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример использования SpellChecker`a</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        input {
+            margin-top: 10px;
+            width: 160px;
+            z-index: 2;
+        }
+    </style>
+
+    <!-- Подключить модуль орфографической проверки ко всем элементам типа textarea и input[type='text'] -->
+    <script src="../jquery.min.js"></script>
+    <script src="../spellchecker.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("textarea").spellCheck();
+            $("input[type='text']").spellCheck();
+        });
+    </script>
+    <!------------------------------------------------------------------------------------------------>
+
+</head>
+<body>
+<textarea data-uid="test" id="test"></textarea><br>
+<textarea data-uid="test0" id="test0" style="display:none;">Встрчаем хлибом да силью!</textarea><br>
+<input data-uid="test1" id="test1" type="text" value=""><br><br>
+<input onClick="$('#test0').css('display','block');" type="button" value="show"><br>
+<input onClick="$('#test0').css('display','none');" type="button" value="hide"><br><br>
+
+<div id="test_1">
+    <textarea></textarea>
+    <input style="z-index: auto;" type="text" value="">
+</div>
+
+<div id="test_2">
+    <textarea></textarea>
+    <input type="text" value="">
+</div>
+
+<div id="test_3">
+    <textarea></textarea>
+    <input type="text" value="">
+</div>
+
+<div id="test_4">
+    <textarea></textarea>
+    <input type="text" value="">
+</div>
+</body>
+</html>

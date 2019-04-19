@@ -1,0 +1,81 @@
+/**********************************************/
+#test_1 {
+    background: #000;
+    display: block;
+    height: 90px;
+    padding: 5px;
+    position: relative;
+    width: 200px;
+}
+
+#test_1 input, #test_1 textarea {
+    background: white;
+    margin-left: 10px;
+}
+
+#test_1 input {
+    position: relative;
+    z-index: 0;
+}
+
+/**********************************************/
+#test_2 {
+    background: #555;
+    display: inline-block;
+    height: 120px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+}
+
+#test_2 input, #test_2 textarea {
+    margin-left: 10px;
+    position: relative;
+}
+
+#test_2 textarea {
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    z-index: 5;
+}
+
+/**********************************************/
+#test_3 {
+    background: #333;
+    display: block;
+    height: 90px;
+    padding: 5px;
+    position: fixed;
+    right: 50px;
+    width: 200px;
+}
+
+#test_3 input, #test_3 textarea {
+    background: yellow;
+    margin-left: 10px;
+    position: absolute;
+}
+
+#test_3 input {
+    margin-top: 60px;
+    position: relative;
+    z-index: -1;
+}
+
+/**********************************************/
+#test_4 {
+    background: #ccc;
+    display: block;
+    height: 90px;
+    left: 220px;
+    padding: 5px;
+    position: fixed;
+    width: 200px;
+}
+
+/*textarea, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+}*/
